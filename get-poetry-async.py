@@ -1,4 +1,5 @@
 # This is the asynchronous Get Poetry Now! client.
+# This program is fast!
 
 import datetime, errno, optparse, select, socket
 

@@ -1,4 +1,5 @@
 # This is the Twisted Get Poetry Now! client, version 2.0.
+# This program is fast!
 
 # NOTE: This should not be used as the basis for production code.
 

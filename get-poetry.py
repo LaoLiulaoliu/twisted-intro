@@ -1,4 +1,5 @@
 # This is the blocking Get Poetry Now! client.
+# This program is slow!
 
 import datetime, optparse, socket
 

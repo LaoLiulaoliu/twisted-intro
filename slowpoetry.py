@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # This is the blocking version of the Slow Poetry Server.
 
 import optparse, os, socket, time
@@ -85,6 +86,7 @@ def main():
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    # port 为0，内核随机分配一个端口 you need to know what port was picked, use getsockname() after bind
     sock.bind((options.iface, options.port or 0))
 
     sock.listen(5)

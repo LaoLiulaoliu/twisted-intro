@@ -1,4 +1,7 @@
+# coding: utf-8
 # This is the *Broken* Twisted Get Poetry Now! client, version 1.0.
+# This is program is slow, but a little bit faster!
+# It build the socket connection in __init__(), 服务是一旦连接建立就立即发送数据，而且我们的操作系统会缓存一部分发送过来但尚读不到的数据到缓冲区中（缓冲区大小是有上限的）
 
 # NOTE: This should not be used as the basis for production code.
 # It uses low-level Twisted APIs as a learning exercise.
